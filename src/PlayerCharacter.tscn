@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=96 format=2]
 
 [ext_resource path="res://Assets/Sprites/Man_Zenojam_Walk_Anim/0012.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Sprites/Man_Zenojam_Walk_Anim/0010.png" type="Texture" id=2]
@@ -32,6 +32,67 @@
 [ext_resource path="res://Assets/Sprites/Man_Zenojam_Walk_Anim/0026.png" type="Texture" id=30]
 [ext_resource path="res://Assets/Sprites/Man_Zenojam_Walk_Anim/0030.png" type="Texture" id=31]
 [ext_resource path="res://Assets/Sprites/Man_Zenojam_Walk_Anim/0032.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0022.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0031.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0034.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0019.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0010.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0013.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0007.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0025.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0037.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0040.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0043.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0046.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0004.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0016.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0028.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0001.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0175.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0178.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0169.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0172.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0157.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0163.png" type="Texture" id=54]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0166.png" type="Texture" id=55]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0160.png" type="Texture" id=56]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0154.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0106.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0058.png" type="Texture" id=59]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0073.png" type="Texture" id=60]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0088.png" type="Texture" id=61]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0091.png" type="Texture" id=62]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0097.png" type="Texture" id=63]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0103.png" type="Texture" id=64]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0052.png" type="Texture" id=65]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0049.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0094.png" type="Texture" id=67]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0112.png" type="Texture" id=68]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0124.png" type="Texture" id=69]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0067.png" type="Texture" id=70]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0121.png" type="Texture" id=71]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0133.png" type="Texture" id=72]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0136.png" type="Texture" id=73]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0139.png" type="Texture" id=74]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0109.png" type="Texture" id=75]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0055.png" type="Texture" id=76]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0130.png" type="Texture" id=77]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0070.png" type="Texture" id=78]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0148.png" type="Texture" id=79]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0151.png" type="Texture" id=80]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0082.png" type="Texture" id=81]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0064.png" type="Texture" id=82]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0076.png" type="Texture" id=83]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0079.png" type="Texture" id=84]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0127.png" type="Texture" id=85]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0100.png" type="Texture" id=86]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0061.png" type="Texture" id=87]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0085.png" type="Texture" id=88]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0115.png" type="Texture" id=89]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0142.png" type="Texture" id=90]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0118.png" type="Texture" id=91]
+[ext_resource path="res://Assets/Sprites/Man_Zenojam_Idle_anim/0145.png" type="Texture" id=92]
+[ext_resource path="res://PlayerCharacter.gd" type="Script" id=93]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -39,18 +100,24 @@ animations = [ {
 "loop": true,
 "name": "Walk",
 "speed": 30.0
+}, {
+"frames": [ ExtResource( 48 ), ExtResource( 45 ), ExtResource( 39 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 46 ), ExtResource( 36 ), ExtResource( 33 ), ExtResource( 40 ), ExtResource( 47 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 66 ), ExtResource( 65 ), ExtResource( 76 ), ExtResource( 59 ), ExtResource( 87 ), ExtResource( 82 ), ExtResource( 70 ), ExtResource( 78 ), ExtResource( 60 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 81 ), ExtResource( 88 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 67 ), ExtResource( 63 ), ExtResource( 86 ), ExtResource( 64 ), ExtResource( 58 ), ExtResource( 75 ), ExtResource( 68 ), ExtResource( 89 ), ExtResource( 91 ), ExtResource( 71 ), ExtResource( 69 ), ExtResource( 85 ), ExtResource( 77 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 90 ), ExtResource( 92 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 57 ), ExtResource( 53 ), ExtResource( 56 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 49 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 30.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 209.774
 
-[node name="Area2D" type="Area2D"]
+[node name="Player" type="Area2D"]
+script = ExtResource( 93 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -33, -58 )
 frames = SubResource( 1 )
 animation = "Walk"
-frame = 6
+frame = 11
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

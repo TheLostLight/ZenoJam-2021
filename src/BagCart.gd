@@ -9,6 +9,7 @@ var box_y
 var box_height
 
 onready var cart_sprite = $CartSprite
+onready var worker_sprite = $WorkerSprite
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,6 +26,7 @@ func _process(delta):
 		box_height = box.global_position.y + box.shape.extents.y
 	if state == cart_fall:
 		cart_sprite.play("Topple")
+		worker_sprite.play("Idle")
 	
 func _input(event):
 	if event is InputEventMouseButton and state == cart_move:

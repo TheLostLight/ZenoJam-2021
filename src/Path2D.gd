@@ -7,10 +7,10 @@ var moveSpeed = 300
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if pathBlocked == false:
+	if not pathBlocked:
 		path.set_offset(path.get_offset() + moveSpeed * delta)
 	else:
-		return
+		pass
 
 
 

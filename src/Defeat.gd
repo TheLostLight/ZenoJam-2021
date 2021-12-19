@@ -16,5 +16,13 @@ func _ready():
 #	pass
 
 
-func _on_LevelOne_pressed():
-	SceneManager.goToScene("res://Level1.tscn", true)
+func _on_RetryButton_pressed():
+	SceneManager.reloadLevel()
+
+
+func _on_MenuButton_pressed():
+	SceneManager.goToScene("res://MainMenu.tscn", false)
+
+
+func _on_QuitButton_pressed():
+	get_tree().quit()

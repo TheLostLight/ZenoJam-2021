@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Path2D.gd" type="Script" id=2]
@@ -36,6 +36,8 @@
 [ext_resource path="res://Assets/Sprites/bagcar_Zenojam_Spill/0008.png" type="Texture" id=34]
 [ext_resource path="res://Assets/Sprites/bagcar_Zenojam_Spill/0007.png" type="Texture" id=35]
 [ext_resource path="res://Assets/Backgrounds/Level1.png" type="Texture" id=36]
+[ext_resource path="res://Timer.gd" type="Script" id=37]
+[ext_resource path="res://Level1.gd" type="Script" id=38]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
@@ -61,7 +63,8 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 32, 23 )
 
-[node name="Node2D" type="Node2D"]
+[node name="Level1" type="Node2D"]
+script = ExtResource( 38 )
 
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 763, 434 )
@@ -74,7 +77,7 @@ script = ExtResource( 2 )
 
 [node name="Lvl1Path" type="PathFollow2D" parent="Path2D"]
 position = Vector2( 256, 728 )
-rotation = -3.00073
+rotation = -2.85662
 loop = false
 
 [node name="Player" parent="Path2D/Lvl1Path" instance=ExtResource( 1 )]
@@ -97,7 +100,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="BagCart"]
+[node name="CartSprite" type="AnimatedSprite" parent="BagCart"]
 position = Vector2( 6, -28 )
 scale = Vector2( 3, 3 )
 frames = SubResource( 4 )
@@ -111,10 +114,15 @@ position = Vector2( 727, 618 )
 position = Vector2( 0, 1 )
 shape = SubResource( 3 )
 
+[node name="Timer" type="Timer" parent="."]
+script = ExtResource( 37 )
+
 [connection signal="area_entered" from="Path2D/Lvl1Path/Player" to="Path2D" method="_on_Area2D_area_entered"]
 [connection signal="area_entered" from="Path2D/Lvl1Path/Player" to="BagCart" method="_on_Player_area_entered"]
 [connection signal="area_exited" from="Path2D/Lvl1Path/Player" to="Path2D" method="_on_Area2D_area_exited"]
 [connection signal="area_entered" from="BagCart" to="Path2D/Lvl1Path/Player" method="_on_BagCart_area_entered"]
+[connection signal="area_entered" from="BagCart" to="Timer" method="_on_BagCart_area_entered"]
 [connection signal="area_entered" from="CartTrigger" to="BagCart" method="_on_CartTrigger_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 [editable path="Path2D/Lvl1Path/Player"]

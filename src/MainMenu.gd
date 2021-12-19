@@ -17,11 +17,11 @@ func _ready():
 
 
 func _on_Play_pressed():
-	get_tree().change_scene("res://Level1.tscn")
+	SceneManager.goToScene("res://Level1.tscn", true)
 
 
 func _on_Level_Select_pressed():
-	get_tree().change_scene("res://Level_Select.tscn")
+	SceneManager.goToScene("res://Level_Select.tscn", false)
 
 
 func _on_Quit_pressed():

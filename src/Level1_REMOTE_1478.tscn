@@ -11,11 +11,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id=2]
-<<<<<<< HEAD
-extents = Vector2( 254, 79 )
-=======
 extents = Vector2( 262, 103 )
->>>>>>> 2076c331b10046c0a81e32e5e0894c91d0996a44
 
 [node name="Node2D" type="Node2D"]
 
@@ -30,20 +26,14 @@ loop = false
 
 [node name="Area2D" parent="Path2D/Lvl1Path" instance=ExtResource( 1 )]
 rotation = -1.5708
-
-[node name="AnimatedSprite" parent="Path2D/Lvl1Path/Area2D" index="0"]
-frame = 0
+scale = Vector2( 0.2, 0.2 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 564, 578 )
 script = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-<<<<<<< HEAD
-position = Vector2( 11, 4.5 )
-=======
 position = Vector2( -10, 0.5 )
->>>>>>> 2076c331b10046c0a81e32e5e0894c91d0996a44
 scale = Vector2( 0.5, 0.5 )
 shape = SubResource( 2 )
 __meta__ = {
@@ -51,18 +41,13 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="Area2D"]
-<<<<<<< HEAD
-=======
 rotation = 3.14159
->>>>>>> 2076c331b10046c0a81e32e5e0894c91d0996a44
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-<<<<<<< HEAD
-=======
 [node name="Button" type="Button" parent="Area2D"]
 margin_left = -141.0
 margin_top = -49.0
@@ -73,8 +58,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
->>>>>>> 2076c331b10046c0a81e32e5e0894c91d0996a44
 [connection signal="area_entered" from="Path2D/Lvl1Path/Area2D" to="Path2D" method="_on_Area2D_area_entered"]
 [connection signal="area_exited" from="Path2D/Lvl1Path/Area2D" to="Path2D" method="_on_Area2D_area_exited"]
-
-[editable path="Path2D/Lvl1Path/Area2D"]
+[connection signal="pressed" from="Area2D/Button" to="Area2D" method="_on_Button_pressed"]

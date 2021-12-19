@@ -3,6 +3,12 @@ extends Node
 var current_scene
 var selected_level
 
+var level_list = [
+	"res://Level1.tscn",
+	"res://MainMenu.tscn"
+]
+var level_count = level_list.size()
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -27,3 +33,6 @@ func deferredGoToScene(path):
 
 func reloadLevel():
 	goToScene(selected_level, false)
+	
+func goToNextLevel():
+	goToScene(level_list[(level_list.find(selected_level) + 1)%level_count], true)

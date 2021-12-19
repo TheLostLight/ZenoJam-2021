@@ -1,4 +1,4 @@
-extends Node2D
+extends MarginContainer
 
 
 # Declare member variables here. Examples:
@@ -16,9 +16,5 @@ func _ready():
 #	pass
 
 
-func _on_DefeatTimer_timeout():
-	SceneManager.goToScene("DefeatScreen.tscn", false)
-
-
-func _on_VictoryTimer_timeout():
-	SceneManager.goToScene("VictoryScreen.tscn", false)
+func _on_Button_pressed():
+	SceneManager.goToNextLevel()

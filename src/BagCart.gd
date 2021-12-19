@@ -8,6 +8,8 @@ var box_width
 var box_y
 var box_height
 
+onready var animated_sprite = $AnimatedSprite
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
@@ -21,6 +23,8 @@ func _process(delta):
 		box_width = box.global_position.x + box.shape.extents.x
 		box_y = box.global_position.y - box.shape.extents.y
 		box_height = box.global_position.y + box.shape.extents.y
+	if state == cart_fall:
+		animated_sprite.play("Topple")
 	
 func _input(event):
 	if event is InputEventMouseButton and state == cart_move:

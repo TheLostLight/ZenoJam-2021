@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://MainMenu-Font.tres" type="Theme" id=1]
+[ext_resource path="res://Assets/Buttons/Button-Hover.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Buttons/Button-Pressed.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Buttons/Button.png" type="Texture" id=4]
+
+[node name="Button" type="TextureButton"]
+margin_right = 264.0
+margin_bottom = 98.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 3.0
+margin_top = 2.0
+margin_right = 258.0
+margin_bottom = 94.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 1 )
+text = "Sample Text"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

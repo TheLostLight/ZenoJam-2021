@@ -2,7 +2,7 @@ extends Area2D
 
 enum {cart_move, cart_fall, cart_stopped}
 var state = cart_stopped
-var speed = 565
+var speed = 590
 var box_x
 var box_width
 var box_y

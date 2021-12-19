@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Path2D.gd" type="Script" id=2]
@@ -35,10 +35,11 @@
 [ext_resource path="res://Assets/Sprites/bagcar_Zenojam_Spill/0010.png" type="Texture" id=33]
 [ext_resource path="res://Assets/Sprites/bagcar_Zenojam_Spill/0008.png" type="Texture" id=34]
 [ext_resource path="res://Assets/Sprites/bagcar_Zenojam_Spill/0007.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Backgrounds/Level1.png" type="Texture" id=36]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 256, 728, -199.7, 93.9066, 199.7, -93.9066, 219, 604, -35.6608, -59.4346, 35.6608, 59.4346, 489, 558, -68.9441, 80.831, 68.9441, -80.831, 1069, 573, -98.6614, 115.303, 98.6614, -115.303, 1130, 371, -47.5477, 89.1519, 47.5477, -89.1519, 987, 211, 0, 0, 0, 0, 996, 64 )
+"points": PoolVector2Array( 0, 0, 0, 0, 256, 728, -194.361, 56.5311, 194.361, -56.5311, 196, 600, -35.6608, -59.4346, 35.6608, 59.4346, 509, 582, -68.9441, 80.831, 68.9441, -80.831, 1029, 558, -98.6614, 115.303, 98.6614, -115.303, 1088, 336, -47.5477, 89.1519, 47.5477, -89.1519, 1040, 160, 0, 0, 0, 0, 1043, -38 )
 }
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -62,6 +63,11 @@ extents = Vector2( 32, 23 )
 
 [node name="Node2D" type="Node2D"]
 
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 763, 434 )
+scale = Vector2( 2.46934, 2.74055 )
+texture = ExtResource( 36 )
+
 [node name="Path2D" type="Path2D" parent="."]
 curve = SubResource( 1 )
 script = ExtResource( 2 )
@@ -76,7 +82,8 @@ rotation = -1.5708
 
 [node name="AnimatedSprite" parent="Path2D/Lvl1Path/Player" index="0"]
 animation = "Idle"
-frame = 33
+frame = 1
+playing = false
 
 [node name="BagCart" type="Area2D" parent="."]
 position = Vector2( -104, 422 )

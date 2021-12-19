@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
+[ext_resource path="res://Music.tscn" type="PackedScene" id=1]
 [ext_resource path="res://MainMenu.gd" type="Script" id=5]
 [ext_resource path="res://Button.tscn" type="PackedScene" id=6]
 
@@ -41,6 +42,8 @@ margin_bottom = 302.0
 
 [node name="Label" parent="CenterContainer/VBoxContainer/Quit" index="0"]
 text = "Quit"
+
+[node name="Music" parent="." instance=ExtResource( 1 )]
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Level Select" to="." method="_on_Level_Select_pressed"]

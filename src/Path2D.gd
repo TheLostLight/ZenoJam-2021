@@ -15,7 +15,8 @@ func _process(delta):
 
 
 func _on_Area2D_area_entered(area):
-	pathBlocked = true
+	if area == get_node("../BagCart"):
+		pathBlocked = true
 
 
 func _on_Area2D_area_exited(area):

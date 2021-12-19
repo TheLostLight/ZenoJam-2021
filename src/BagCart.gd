@@ -29,5 +29,10 @@ func _input(event):
 				state = cart_fall
 
 
-func _on_CartTrigger_area_entered(_area):
+func _on_CartTrigger_area_entered(area):
 	state = cart_move
+
+
+func _on_Player_area_entered(area):
+	if area == self:
+		state = cart_fall

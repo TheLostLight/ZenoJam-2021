@@ -28,7 +28,7 @@ loop = false
 rotation = -1.5708
 
 [node name="AnimatedSprite" parent="Path2D/Lvl1Path/Area2D" index="0"]
-frame = 12
+frame = 95
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 564, 578 )

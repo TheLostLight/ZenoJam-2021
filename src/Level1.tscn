@@ -30,7 +30,6 @@ loop = false
 
 [node name="Area2D" parent="Path2D/Lvl1Path" instance=ExtResource( 1 )]
 rotation = -1.5708
-scale = Vector2( 0.2, 0.2 )
 
 [node name="AnimatedSprite" parent="Path2D/Lvl1Path/Area2D" index="0"]
 frame = 0

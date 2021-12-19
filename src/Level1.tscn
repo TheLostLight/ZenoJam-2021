@@ -26,7 +26,6 @@ loop = false
 
 [node name="Area2D" parent="Path2D/Lvl1Path" instance=ExtResource( 1 )]
 rotation = -1.5708
-scale = Vector2( 0.2, 0.2 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 564, 578 )

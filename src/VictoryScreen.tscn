@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Button.tscn" type="PackedScene" id=1]
 [ext_resource path="res://VictoryScreen.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Backgrounds/winscreen.png" type="Texture" id=3]
 
 [node name="VictoryScreen" type="MarginContainer"]
 anchor_top = 0.718
@@ -13,6 +14,11 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 667, -176.808 )
+scale = Vector2( 0.748698, 0.723611 )
+texture = ExtResource( 3 )
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 margin_right = 1366.0

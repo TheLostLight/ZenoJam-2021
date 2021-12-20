@@ -67,5 +67,6 @@ text = "32F"
 position = Vector2( 1273, 28 )
 
 [node name="CustomPointer" parent="." instance=ExtResource( 4 )]
+frame = 0
 
 [editable path="Ticket"]

@@ -153,6 +153,8 @@ position = Vector2( 1273, 28 )
 
 [node name="CustomPointer" parent="." instance=ExtResource( 4 )]
 frame = 0
+<<<<<<< HEAD
+=======
 
 [node name="Lvl2Path" type="Path2D" parent="."]
 curve = SubResource( 3 )
@@ -201,5 +203,6 @@ texture = ExtResource( 63 )
 __meta__ = {
 "_edit_lock_": true
 }
+>>>>>>> 21aa79b180df4310a32f5a23f368b0ec46ab3af6
 
 [editable path="Ticket"]

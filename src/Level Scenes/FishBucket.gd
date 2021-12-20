@@ -9,6 +9,7 @@ var box_height
 
 var state = UPRIGHT
 
+
 onready var bucket_sprite = $BucketSprite
 
 # Called when the node enters the scene tree for the first time.

@@ -20,6 +20,10 @@ func _ready():
 func goToScene(path, is_level):
 	if is_level:
 		selected_level = path
+		if path != "res://MainMenu.tscn":
+			Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
+	else:
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
 	call_deferred("deferredGoToScene", path)
 	

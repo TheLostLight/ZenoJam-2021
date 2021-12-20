@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=90 format=2]
 
 [ext_resource path="res://VictoryTrigger.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Hud Scenes/MenuButton.tscn" type="PackedScene" id=2]
@@ -17,6 +17,72 @@
 [ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_04.png" type="Texture" id=15]
 [ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_11.png" type="Texture" id=16]
 [ext_resource path="res://Level Scenes/FishBucket.gd" type="Script" id=17]
+[ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0063.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0061.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0060.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0062.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0026.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0029.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0007.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0032.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0035.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0006.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0028.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0039.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0041.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0004.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0042.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0044.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0045.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0046.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0017.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0002.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0005.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0015.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0001.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0020.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0021.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0022.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0024.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0016.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0027.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0030.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0012.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0023.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0008.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0036.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0037.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0038.png" type="Texture" id=54]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0040.png" type="Texture" id=55]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0025.png" type="Texture" id=56]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0013.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0014.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0033.png" type="Texture" id=59]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0003.png" type="Texture" id=60]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0034.png" type="Texture" id=61]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0009.png" type="Texture" id=62]
+[ext_resource path="res://Assets/Sprites/SledRider.png" type="Texture" id=63]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0031.png" type="Texture" id=64]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0018.png" type="Texture" id=65]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0043.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0010.png" type="Texture" id=67]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0011.png" type="Texture" id=68]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0019.png" type="Texture" id=69]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0049.png" type="Texture" id=70]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0053.png" type="Texture" id=71]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0050.png" type="Texture" id=72]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0047.png" type="Texture" id=73]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0057.png" type="Texture" id=74]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0054.png" type="Texture" id=75]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0058.png" type="Texture" id=76]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0052.png" type="Texture" id=77]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0048.png" type="Texture" id=78]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0056.png" type="Texture" id=79]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0059.png" type="Texture" id=80]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0055.png" type="Texture" id=81]
+[ext_resource path="res://Assets/Sprites/PolarBear_Idle/0051.png" type="Texture" id=82]
+[ext_resource path="res://Level Scenes/Lvl2Path.gd" type="Script" id=83]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 40.5, 72.5 )
@@ -33,6 +99,25 @@ animations = [ {
 "name": "Topple",
 "speed": 15.0
 } ]
+
+[sub_resource type="Curve2D" id=3]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 133, 710, -41, 39, 41, -39, 492, 667, 25, 45, -25, -45, 500, 537, 17, 57, -17, -57, 107, 458, -32, 27, 32, -27, 136, 368, -53, -5, 53, 5, 504, 434, -42, 31, 42, -31, 632, 426, -2, 37, 2, -37, 685, 367, 0, 0, 0, 0, 624, 341, 32, 27, -32, -27, 508, 354, 19, 38, -19, -38, 379, 314, 0, 0, 0, 0, 400, 264, -7, 38, 7, -38, 544, 209, 0, 0, 0, 0, 441, -38 )
+}
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 62, 20.25 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 41 ), ExtResource( 38 ), ExtResource( 60 ), ExtResource( 32 ), ExtResource( 39 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 51 ), ExtResource( 62 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 49 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 40 ), ExtResource( 46 ), ExtResource( 37 ), ExtResource( 65 ), ExtResource( 69 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 50 ), ExtResource( 45 ), ExtResource( 56 ), ExtResource( 23 ), ExtResource( 47 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 48 ), ExtResource( 64 ), ExtResource( 26 ), ExtResource( 59 ), ExtResource( 61 ), ExtResource( 27 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 30 ), ExtResource( 55 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 66 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 73 ), ExtResource( 78 ), ExtResource( 70 ), ExtResource( 72 ), ExtResource( 82 ), ExtResource( 77 ), ExtResource( 71 ), ExtResource( 75 ), ExtResource( 81 ), ExtResource( 79 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 80 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 30.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 43, 16.5 )
 
 [node name="Level2" type="Node2D"]
 
@@ -67,5 +152,54 @@ text = "32F"
 position = Vector2( 1273, 28 )
 
 [node name="CustomPointer" parent="." instance=ExtResource( 4 )]
+frame = 0
+
+[node name="Lvl2Path" type="Path2D" parent="."]
+curve = SubResource( 3 )
+script = ExtResource( 83 )
+
+[node name="Lvl2PathFollow" type="PathFollow2D" parent="Lvl2Path"]
+position = Vector2( 133, 710 )
+rotation = -1.5708
+loop = false
+
+[node name="Player" parent="Lvl2Path/Lvl2PathFollow" instance=ExtResource( 18 )]
+
+[node name="Bear" type="Area2D" parent="."]
+position = Vector2( 1008, 72 )
+rotation = -1.5708
+scale = Vector2( 2, 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bear"]
+position = Vector2( -8.5, -0.75 )
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Bear"]
+frames = SubResource( 5 )
+animation = "Idle"
+frame = 54
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sled" type="Area2D" parent="."]
+position = Vector2( 1428, 419 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sled"]
+position = Vector2( 2, -0.5 )
+shape = SubResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Sled"]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 63 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [editable path="Ticket"]

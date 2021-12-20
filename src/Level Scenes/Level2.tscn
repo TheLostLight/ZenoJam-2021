@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=2]
+[gd_scene load_steps=91 format=2]
 
 [ext_resource path="res://VictoryTrigger.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Hud Scenes/MenuButton.tscn" type="PackedScene" id=2]
@@ -83,6 +83,7 @@
 [ext_resource path="res://Assets/Sprites/PolarBear_Idle/0055.png" type="Texture" id=81]
 [ext_resource path="res://Assets/Sprites/PolarBear_Idle/0051.png" type="Texture" id=82]
 [ext_resource path="res://Level Scenes/Lvl2Path.gd" type="Script" id=83]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_12.png" type="Texture" id=84]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 40.5, 72.5 )
@@ -98,6 +99,11 @@ animations = [ {
 "loop": false,
 "name": "Topple",
 "speed": 15.0
+}, {
+"frames": [ ExtResource( 84 ) ],
+"loop": true,
+"name": "Empty",
+"speed": 5.0
 } ]
 
 [sub_resource type="Curve2D" id=3]
@@ -131,28 +137,10 @@ shape = SubResource( 1 )
 
 [node name="BucketSprite" type="AnimatedSprite" parent="FishBucket"]
 frames = SubResource( 2 )
-animation = "Topple"
+animation = "Idle"
 
 [node name="VictoryTrigger" parent="." instance=ExtResource( 1 )]
 position = Vector2( 388, -99 )
-
-[node name="Ticket" parent="." instance=ExtResource( 3 )]
-position = Vector2( 178, 93 )
-
-[node name="Depart" parent="Ticket" index="0"]
-text = "Vancouver"
-
-[node name="Arrive" parent="Ticket" index="1"]
-text = "Shanghai"
-
-[node name="Gate" parent="Ticket" index="2"]
-text = "32F"
-
-[node name="MenuButton" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1273, 28 )
-
-[node name="CustomPointer" parent="." instance=ExtResource( 4 )]
-frame = 0
 
 [node name="Lvl2Path" type="Path2D" parent="."]
 curve = SubResource( 3 )
@@ -160,10 +148,12 @@ script = ExtResource( 83 )
 
 [node name="Lvl2PathFollow" type="PathFollow2D" parent="Lvl2Path"]
 position = Vector2( 133, 710 )
-rotation = -1.5708
+rotation = -0.0154779
 loop = false
 
 [node name="Player" parent="Lvl2Path/Lvl2PathFollow" instance=ExtResource( 18 )]
+rotation = -1.5708
+collision_layer = 3
 
 [node name="Bear" type="Area2D" parent="."]
 position = Vector2( 1008, 72 )
@@ -201,5 +191,25 @@ texture = ExtResource( 63 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Ticket" parent="." instance=ExtResource( 3 )]
+position = Vector2( 178, 93 )
+
+[node name="Depart" parent="Ticket" index="0"]
+text = "Vancouver"
+
+[node name="Arrive" parent="Ticket" index="1"]
+text = "Shanghai"
+
+[node name="Gate" parent="Ticket" index="2"]
+text = "32F"
+
+[node name="MenuButton" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1273, 28 )
+
+[node name="CustomPointer" parent="." instance=ExtResource( 4 )]
+frame = 0
+
+[connection signal="animation_finished" from="FishBucket/BucketSprite" to="FishBucket" method="_on_BucketSprite_animation_finished"]
 
 [editable path="Ticket"]

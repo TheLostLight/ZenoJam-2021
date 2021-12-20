@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://CustomPointer.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Sprites/Pointer/Pointer2.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Sprites/Pointer/Pointer1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/Fish.png" type="Texture" id=4]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -10,10 +11,14 @@ animations = [ {
 "loop": true,
 "name": "default",
 "speed": 3.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Fish",
+"speed": 5.0
 } ]
 
 [node name="CustomPointer" type="AnimatedSprite"]
 frames = SubResource( 1 )
-frame = 1
 playing = true
 script = ExtResource( 1 )

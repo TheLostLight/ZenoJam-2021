@@ -327,7 +327,7 @@ position = Vector2( -294, 5 )
 rotation = 4.71239
 frames = SubResource( 5 )
 animation = "Run"
-frame = 2
+frame = 12
 playing = true
 
 [node name="CartTrigger" type="Area2D" parent="."]
@@ -361,6 +361,7 @@ text = "2A"
 position = Vector2( 1288, 13 )
 
 [node name="CustomPointer" parent="." instance=ExtResource( 237 )]
+frame = 1
 
 [connection signal="area_entered" from="Path2D/Lvl1Path/Player" to="Path2D" method="_on_Area2D_area_entered"]
 [connection signal="area_entered" from="Path2D/Lvl1Path/Player" to="BagCart" method="_on_Player_area_entered"]

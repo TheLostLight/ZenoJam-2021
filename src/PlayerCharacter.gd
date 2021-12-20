@@ -31,3 +31,13 @@ func _process(delta):
 func _on_BagCart_area_entered(area):
 	if area == self:
 		state = player_fall
+
+
+func _on_Sled_area_entered(area):
+	if area == self:
+		state = player_fall
+
+
+func _on_Bear_area_entered(area):
+	if area == self:
+		state = player_fall

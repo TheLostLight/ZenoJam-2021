@@ -12,6 +12,7 @@ onready var mover = $Tween
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	state = bear_idle
+	anim.play("Idle")
 
 	monitoring = true
 

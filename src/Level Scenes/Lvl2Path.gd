@@ -1,6 +1,7 @@
 extends Path2D
 
 onready var path = get_node("Lvl2PathFollow")
+onready var player = $Lvl2PathFollow/Player
 var pathBlocked = false
 
 var moveSpeed = 300 
@@ -14,10 +15,6 @@ func _process(delta):
 
 
 
-func _on_Area2D_area_entered(area):
-	if area == get_node(".../Sled"):
-		pathBlocked = true
 
-
-func _on_Area2D_area_exited(area):
-	pathBlocked = false
+func _on_Player_area_entered(area):
+	pathBlocked = true

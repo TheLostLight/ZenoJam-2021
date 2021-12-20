@@ -13,8 +13,8 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 743, 219 )
-scale = Vector2( 1.08646, 1.08056 )
+position = Vector2( 705, 239 )
+scale = Vector2( 1.1474, 1.16852 )
 texture = ExtResource( 3 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]

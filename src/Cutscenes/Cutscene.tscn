@@ -6,6 +6,17 @@
 
 [node name="Background" type="Sprite" parent="SceneOne"]
 
+[node name="TextBoxOne" type="Node2D" parent="SceneOne"]
+
+[node name="Sprite" type="Sprite" parent="SceneOne/TextBoxOne"]
+
+[node name="Label" type="Label" parent="SceneOne/TextBoxOne"]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="SceneTwo" type="Node2D" parent="."]
 visible = false
 

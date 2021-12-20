@@ -1,4 +1,4 @@
-[gd_scene load_steps=243 format=2]
+[gd_scene load_steps=245 format=2]
 
 [ext_resource path="res://PlayerCharacter.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Path2D.gd" type="Script" id=2]
@@ -237,6 +237,8 @@
 [ext_resource path="res://Assets/Sprites/Worker_Zenojam_headshake/0152.png" type="Texture" id=235]
 [ext_resource path="res://VictoryTrigger.tscn" type="PackedScene" id=236]
 [ext_resource path="res://CustomPointer.tscn" type="PackedScene" id=237]
+[ext_resource path="res://Hud Scenes/Ticket.tscn" type="PackedScene" id=238]
+[ext_resource path="res://Hud Scenes/MenuButton.tscn" type="PackedScene" id=239]
 
 [sub_resource type="Curve2D" id=1]
 _data = {
@@ -325,7 +327,7 @@ position = Vector2( -294, 5 )
 rotation = 4.71239
 frames = SubResource( 5 )
 animation = "Run"
-frame = 36
+frame = 5
 playing = true
 
 [node name="CartTrigger" type="Area2D" parent="."]
@@ -343,8 +345,22 @@ script = ExtResource( 37 )
 [node name="CollisionShape2D" parent="VictoryTrigger" index="0"]
 position = Vector2( 1056, -63 )
 
+[node name="Ticket" parent="." instance=ExtResource( 238 )]
+position = Vector2( 176, 88 )
+
+[node name="Depart" parent="Ticket" index="0"]
+text = "Terrace"
+
+[node name="Arrive" parent="Ticket" index="1"]
+text = "Vancouver"
+
+[node name="Gate" parent="Ticket" index="2"]
+text = "2A"
+
+[node name="MenuButton" parent="." instance=ExtResource( 239 )]
+position = Vector2( 1288, 13 )
+
 [node name="CustomPointer" parent="." instance=ExtResource( 237 )]
-frame = 0
 
 [connection signal="area_entered" from="Path2D/Lvl1Path/Player" to="Path2D" method="_on_Area2D_area_entered"]
 [connection signal="area_entered" from="Path2D/Lvl1Path/Player" to="BagCart" method="_on_Player_area_entered"]
@@ -357,3 +373,4 @@ frame = 0
 
 [editable path="Path2D/Lvl1Path/Player"]
 [editable path="VictoryTrigger"]
+[editable path="Ticket"]

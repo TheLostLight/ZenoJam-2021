@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TicketFont.tres" type="Theme" id=1]
+[ext_resource path="res://Assets/Sprites/Hud/CrappyTicket.png" type="Texture" id=2]
+
+[node name="Sprite" type="Sprite"]
+texture = ExtResource( 2 )
+
+[node name="Depart" type="Label" parent="."]
+margin_left = -82.0
+margin_top = -4.0
+margin_right = -16.0
+margin_bottom = 10.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Sample Text"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Arrive" type="Label" parent="."]
+margin_left = -84.0
+margin_top = 30.0
+margin_right = -44.0
+margin_bottom = 44.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Sample Text"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Gate" type="Label" parent="."]
+margin_left = 88.0
+margin_top = -6.0
+margin_right = 154.0
+margin_bottom = 19.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Sample Text"
+__meta__ = {
+"_edit_use_anchors_": false
+}

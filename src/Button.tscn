@@ -8,7 +8,7 @@
 [node name="Button" type="TextureButton"]
 margin_right = 264.0
 margin_bottom = 98.0
-size_flags_horizontal = 3
+size_flags_horizontal = 0
 size_flags_vertical = 3
 texture_normal = ExtResource( 4 )
 texture_pressed = ExtResource( 3 )

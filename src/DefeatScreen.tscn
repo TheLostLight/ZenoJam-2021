@@ -60,7 +60,6 @@ alignment = 1
 [node name="QuitButton" parent="CenterContainer/VBoxContainer/HBoxContainer2" instance=ExtResource( 1 )]
 margin_left = 134.0
 margin_right = 398.0
-size_flags_horizontal = 0
 
 [node name="Label" parent="CenterContainer/VBoxContainer/HBoxContainer2/QuitButton" index="0"]
 text = "Quit to Desktop"

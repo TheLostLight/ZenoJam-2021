@@ -6,6 +6,7 @@ var selected_level
 var level_list = [
 	"res://Level1.tscn",
 	"res://Level Scenes/Level2.tscn",
+	"res://Cutscenes/End.tscn",
 	"res://MainMenu.tscn"
 ]
 var level_count = level_list.size()
@@ -21,7 +22,7 @@ func _ready():
 func goToScene(path, is_level):
 	if is_level:
 		selected_level = path
-		if path != "res://MainMenu.tscn":
+		if path != "res://MainMenu.tscn" and path != "res://Cutscenes/End.tscn":
 			Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
 	else:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

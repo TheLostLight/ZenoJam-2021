@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/wildwordsroman.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://MainMenu-Font.tres" type="Theme" id=2]
+[ext_resource path="res://Cutscenes/End.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Backgrounds/end.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 82
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="End" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 686.75, 390.25 )
+scale = Vector2( 0.724219, 0.747685 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 164.0
+margin_top = 43.0
+margin_right = 1179.0
+margin_bottom = 129.0
+theme = ExtResource( 2 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 8
+custom_constants/shadow_offset_y = 8
+custom_fonts/font = SubResource( 1 )
+text = "Welcome to Shanghai!"
+__meta__ = {
+"_edit_use_anchors_": false
+}

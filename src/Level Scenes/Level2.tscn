@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=2]
+[gd_scene load_steps=139 format=2]
 
 [ext_resource path="res://VictoryTrigger.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Hud Scenes/MenuButton.tscn" type="PackedScene" id=2]
@@ -83,8 +83,7 @@
 [ext_resource path="res://Assets/Sprites/PolarBear_Idle/0055.png" type="Texture" id=81]
 [ext_resource path="res://Assets/Sprites/PolarBear_Idle/0051.png" type="Texture" id=82]
 [ext_resource path="res://Level Scenes/Lvl2Path.gd" type="Script" id=83]
-<<<<<<< HEAD
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0031.png" type="Texture" id=84]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_12.png" type="Texture" id=84]
 [ext_resource path="res://Assets/Sprites/PolarBear_Walk/0039.png" type="Texture" id=85]
 [ext_resource path="res://Assets/Sprites/PolarBear_Walk/0021.png" type="Texture" id=86]
 [ext_resource path="res://Assets/Sprites/PolarBear_Walk/0027.png" type="Texture" id=87]
@@ -132,9 +131,7 @@
 [ext_resource path="res://Assets/Sprites/PolarBear_Walk/0016.png" type="Texture" id=129]
 [ext_resource path="res://Assets/Sprites/PolarBear_Walk/0015.png" type="Texture" id=130]
 [ext_resource path="res://Assets/Sprites/PolarBear_Walk/0011.png" type="Texture" id=131]
-=======
-[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_12.png" type="Texture" id=84]
->>>>>>> 579f8d33b83ad76449ba8a6de3bc521399ae88d3
+[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0031.png" type="Texture" id=132]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 40.5, 72.5 )
@@ -172,7 +169,7 @@ animations = [ {
 "name": "Idle",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 116 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 121 ), ExtResource( 117 ), ExtResource( 125 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 131 ), ExtResource( 128 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 130 ), ExtResource( 129 ), ExtResource( 104 ), ExtResource( 108 ), ExtResource( 113 ), ExtResource( 96 ), ExtResource( 86 ), ExtResource( 98 ), ExtResource( 114 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 94 ), ExtResource( 87 ), ExtResource( 107 ), ExtResource( 97 ), ExtResource( 103 ), ExtResource( 84 ), ExtResource( 102 ), ExtResource( 101 ), ExtResource( 89 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 88 ), ExtResource( 110 ), ExtResource( 85 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 111 ), ExtResource( 93 ), ExtResource( 106 ), ExtResource( 95 ), ExtResource( 112 ) ],
+"frames": [ ExtResource( 116 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 121 ), ExtResource( 117 ), ExtResource( 125 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 131 ), ExtResource( 128 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 130 ), ExtResource( 129 ), ExtResource( 104 ), ExtResource( 108 ), ExtResource( 113 ), ExtResource( 96 ), ExtResource( 86 ), ExtResource( 98 ), ExtResource( 114 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 94 ), ExtResource( 87 ), ExtResource( 107 ), ExtResource( 97 ), ExtResource( 103 ), ExtResource( 132 ), ExtResource( 102 ), ExtResource( 101 ), ExtResource( 89 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 88 ), ExtResource( 110 ), ExtResource( 85 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 111 ), ExtResource( 93 ), ExtResource( 106 ), ExtResource( 95 ), ExtResource( 112 ) ],
 "loop": true,
 "name": "Walk",
 "speed": 30.0
@@ -198,26 +195,6 @@ animation = "Idle"
 [node name="VictoryTrigger" parent="." instance=ExtResource( 1 )]
 position = Vector2( 388, -99 )
 
-<<<<<<< HEAD
-[node name="Ticket" parent="." instance=ExtResource( 3 )]
-position = Vector2( 178, 93 )
-
-[node name="Depart" parent="Ticket" index="0"]
-text = "Vancouver"
-
-[node name="Arrive" parent="Ticket" index="1"]
-text = "Shanghai"
-
-[node name="Gate" parent="Ticket" index="2"]
-text = "32F"
-
-[node name="MenuButton" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1273, 28 )
-
-[node name="CustomPointer" parent="." instance=ExtResource( 4 )]
-
-=======
->>>>>>> 579f8d33b83ad76449ba8a6de3bc521399ae88d3
 [node name="Lvl2Path" type="Path2D" parent="."]
 curve = SubResource( 3 )
 script = ExtResource( 83 )
@@ -286,8 +263,9 @@ text = "32F"
 position = Vector2( 1273, 28 )
 
 [node name="CustomPointer" parent="." instance=ExtResource( 4 )]
-frame = 0
+frame = 1
 
+[connection signal="pickup" from="FishBucket" to="Bear" method="_on_FishBucket_pickup"]
 [connection signal="animation_finished" from="FishBucket/BucketSprite" to="FishBucket" method="_on_BucketSprite_animation_finished"]
 
 [editable path="Ticket"]

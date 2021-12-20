@@ -9,6 +9,7 @@ var box_height
 
 var state = UPRIGHT
 
+signal pickup
 
 onready var bucket_sprite = $BucketSprite
 
@@ -35,6 +36,7 @@ func _input(event):
 					state = FISHTAKEN
 					bucket_sprite.play("Empty")
 					get_node("../CustomPointer").play("Fish")
+					emit_signal("pickup")
 			
 					
 

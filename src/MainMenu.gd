@@ -17,7 +17,7 @@ func _ready():
 
 
 func _on_Play_pressed():
-	SceneManager.goToScene("res://Level1.tscn", true)
+	SceneManager.goToScene("res://Cutscenes/Cutscene.tscn", false)
 
 
 func _on_Level_Select_pressed():

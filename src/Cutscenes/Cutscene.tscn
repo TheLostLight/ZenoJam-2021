@@ -21,17 +21,17 @@ script = ExtResource( 3 )
 [node name="TextBoxOne" type="Node2D" parent="SceneOne"]
 
 [node name="Sprite" type="Sprite" parent="SceneOne/TextBoxOne"]
-position = Vector2( 700.5, 543.5 )
-scale = Vector2( 3.45833, 2.33673 )
+position = Vector2( 700.5, 553 )
+scale = Vector2( 3.45833, 2.53061 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="SceneOne/TextBoxOne"]
-margin_left = 403.0
-margin_top = 462.0
-margin_right = 992.0
-margin_bottom = 619.0
+margin_left = 406.0
+margin_top = 448.0
+margin_right = 995.0
+margin_bottom = 645.0
 theme = SubResource( 2 )
-text = "It was a frigid December night, and international business man _ was at home visiting family for the holidays when..."
+text = "It was a frigid December night, and international business man Mr. Botos Binted was visiting family in Terrace B.C., Canada for the holidays when..."
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -50,10 +50,10 @@ scale = Vector2( 3.45833, 2.33673 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="SceneTwo/TextBoxOne"]
-margin_left = 409.5
-margin_top = 485.5
-margin_right = 998.5
-margin_bottom = 590.5
+margin_left = 423.0
+margin_top = 502.0
+margin_right = 1012.0
+margin_bottom = 607.0
 theme = SubResource( 2 )
 text = "A phonecall from his boss interrupted his peaceful evening"
 autowrap = true
@@ -79,7 +79,7 @@ margin_top = 460.5
 margin_right = 1002.5
 margin_bottom = 617.5
 theme = SubResource( 2 )
-text = "\"_, December is the month of business. I need you out meeting clients now. Get on the next plane to Shanghai or you're fired!\""
+text = "\"Binted! December is the month of business. I need you out meeting clients now. Get on the next plane to Shanghai or you're fired!\""
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -103,7 +103,7 @@ margin_top = 457.5
 margin_right = 1001.5
 margin_bottom = 614.5
 theme = SubResource( 2 )
-text = "And so, with a prayer that someone or something was watching out for him, _ left for the airport to try and catch a last minute flight."
+text = "And so, with a prayer that someone or something was watching out for him, Botos left for the airport to try and catch a last minute flight."
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false

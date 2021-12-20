@@ -327,7 +327,7 @@ position = Vector2( -294, 5 )
 rotation = 4.71239
 frames = SubResource( 5 )
 animation = "Run"
-frame = 12
+frame = 4
 playing = true
 
 [node name="CartTrigger" type="Area2D" parent="."]

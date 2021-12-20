@@ -1,4 +1,4 @@
-[gd_scene load_steps=143 format=2]
+[gd_scene load_steps=144 format=2]
 
 [ext_resource path="res://VictoryTrigger.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Hud Scenes/MenuButton.tscn" type="PackedScene" id=2]
@@ -136,6 +136,7 @@
 [ext_resource path="res://Level Scenes/Defeat timer.gd" type="Script" id=134]
 [ext_resource path="res://Level Scenes/Level2.gd" type="Script" id=135]
 [ext_resource path="res://Level Scenes/Vic Time.gd" type="Script" id=136]
+[ext_resource path="res://Assets/Backgrounds/Level2.png" type="Texture" id=137]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 40.5, 72.5 )
@@ -160,30 +161,35 @@ animations = [ {
 
 [sub_resource type="Curve2D" id=3]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 133, 710, -41, 39, 41, -39, 492, 667, 25, 45, -25, -45, 500, 537, 17, 57, -17, -57, 107, 458, -32, 27, 32, -27, 136, 368, -53, -5, 53, 5, 504, 434, -42, 31, 42, -31, 632, 426, -2, 37, 2, -37, 685, 367, 0, 0, 0, 0, 624, 341, 32, 27, -32, -27, 508, 354, 19, 38, -19, -38, 379, 314, 0, 0, 0, 0, 400, 264, -7, 38, 7, -38, 544, 209, 0, 0, 0, 0, 424, 12 )
+"points": PoolVector2Array( 0, 0, 0, 0, 133, 710, -41, 39, 41, -39, 492, 667, 25, 45, -25, -45, 500, 537, 17, 57, -17, -57, 107, 458, -32, 27, 32, -27, 136, 368, -53, -5, 53, 5, 504, 434, -42, 31, 42, -31, 632, 426, -2, 37, 2, -37, 685, 367, 0, 0, 0, 0, 624, 341, 32, 27, -32, -27, 508, 354, 19, 38, -19, -38, 379, 314, 0, 0, 0, 0, 400, 264, -7, 38, 7, -38, 544, 209, 0, 0, 0, 0, 427, -183 )
 }
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 43, 16.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 62, 20.25 )
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ ExtResource( 116 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 121 ), ExtResource( 117 ), ExtResource( 125 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 131 ), ExtResource( 128 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 130 ), ExtResource( 129 ), ExtResource( 104 ), ExtResource( 108 ), ExtResource( 113 ), ExtResource( 96 ), ExtResource( 86 ), ExtResource( 98 ), ExtResource( 114 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 94 ), ExtResource( 87 ), ExtResource( 107 ), ExtResource( 97 ), ExtResource( 103 ), ExtResource( 132 ), ExtResource( 102 ), ExtResource( 101 ), ExtResource( 89 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 88 ), ExtResource( 110 ), ExtResource( 85 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 111 ), ExtResource( 93 ), ExtResource( 106 ), ExtResource( 95 ), ExtResource( 112 ) ],
-"loop": true,
-"name": "Walk",
-"speed": 30.0
-}, {
 "frames": [ ExtResource( 41 ), ExtResource( 38 ), ExtResource( 60 ), ExtResource( 32 ), ExtResource( 39 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 51 ), ExtResource( 62 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 49 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 40 ), ExtResource( 46 ), ExtResource( 37 ), ExtResource( 65 ), ExtResource( 69 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 50 ), ExtResource( 45 ), ExtResource( 56 ), ExtResource( 23 ), ExtResource( 47 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 48 ), ExtResource( 64 ), ExtResource( 26 ), ExtResource( 59 ), ExtResource( 61 ), ExtResource( 27 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 30 ), ExtResource( 55 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 66 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 73 ), ExtResource( 78 ), ExtResource( 70 ), ExtResource( 72 ), ExtResource( 82 ), ExtResource( 77 ), ExtResource( 71 ), ExtResource( 75 ), ExtResource( 81 ), ExtResource( 79 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 80 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 19 ) ],
 "loop": true,
 "name": "Idle",
 "speed": 30.0
+}, {
+"frames": [ ExtResource( 116 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 121 ), ExtResource( 117 ), ExtResource( 125 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 131 ), ExtResource( 128 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 130 ), ExtResource( 129 ), ExtResource( 104 ), ExtResource( 108 ), ExtResource( 113 ), ExtResource( 96 ), ExtResource( 86 ), ExtResource( 98 ), ExtResource( 114 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 94 ), ExtResource( 87 ), ExtResource( 107 ), ExtResource( 97 ), ExtResource( 103 ), ExtResource( 132 ), ExtResource( 102 ), ExtResource( 101 ), ExtResource( 89 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 88 ), ExtResource( 110 ), ExtResource( 85 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 111 ), ExtResource( 93 ), ExtResource( 106 ), ExtResource( 95 ), ExtResource( 112 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 30.0
 } ]
-
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 43, 16.5 )
 
 [node name="Level2" type="Node2D"]
 script = ExtResource( 135 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 692, 383.375 )
+scale = Vector2( 1.96277, 1.89106 )
+texture = ExtResource( 137 )
 
 [node name="FishBucket" type="Area2D" parent="."]
 position = Vector2( 740, 620 )
@@ -198,7 +204,7 @@ frames = SubResource( 2 )
 animation = "Idle"
 
 [node name="VictoryTrigger" parent="." instance=ExtResource( 1 )]
-position = Vector2( 405, 1 )
+position = Vector2( 392, -194 )
 
 [node name="Vic Time" type="Timer" parent="VictoryTrigger"]
 script = ExtResource( 136 )
@@ -216,8 +222,26 @@ loop = false
 rotation = -1.5708
 collision_layer = 3
 
+[node name="Sled" type="Area2D" parent="."]
+position = Vector2( 1428, 419 )
+script = ExtResource( 133 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sled"]
+position = Vector2( 2, -0.5 )
+shape = SubResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Sled"]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 63 )
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="Bear" type="Area2D" parent="."]
-position = Vector2( 725, 173 )
+position = Vector2( 722, 111 )
 rotation = -1.5708
 scale = Vector2( 2, 2 )
 script = ExtResource( 115 )
@@ -237,24 +261,6 @@ __meta__ = {
 }
 
 [node name="Tween" type="Tween" parent="Bear"]
-
-[node name="Sled" type="Area2D" parent="."]
-position = Vector2( 1428, 419 )
-script = ExtResource( 133 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sled"]
-position = Vector2( 2, -0.5 )
-shape = SubResource( 6 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Sled"]
-scale = Vector2( 0.25, 0.25 )
-texture = ExtResource( 63 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Ticket" parent="." instance=ExtResource( 3 )]
 position = Vector2( 178, 93 )
@@ -281,12 +287,12 @@ script = ExtResource( 134 )
 [connection signal="area_entered" from="VictoryTrigger" to="VictoryTrigger/Vic Time" method="_on_VictoryTrigger_area_entered"]
 [connection signal="timeout" from="VictoryTrigger/Vic Time" to="." method="_on_Vic_Time_timeout"]
 [connection signal="area_entered" from="Lvl2Path/Lvl2PathFollow/Player" to="Lvl2Path" method="_on_Player_area_entered"]
-[connection signal="area_entered" from="Bear" to="Lvl2Path/Lvl2PathFollow/Player" method="_on_Bear_area_entered"]
-[connection signal="area_entered" from="Bear" to="Defeat timer" method="_on_Bear_area_entered"]
 [connection signal="area_entered" from="Sled" to="Lvl2Path" method="_on_Sled_area_entered"]
 [connection signal="area_entered" from="Sled" to="Lvl2Path/Lvl2PathFollow/Player" method="_on_Sled_area_entered"]
 [connection signal="area_entered" from="Sled" to="Sled" method="_on_Sled_area_entered"]
 [connection signal="area_entered" from="Sled" to="Defeat timer" method="_on_Sled_area_entered"]
+[connection signal="area_entered" from="Bear" to="Lvl2Path/Lvl2PathFollow/Player" method="_on_Bear_area_entered"]
+[connection signal="area_entered" from="Bear" to="Defeat timer" method="_on_Bear_area_entered"]
 [connection signal="timeout" from="Defeat timer" to="." method="_on_Defeat_timer_timeout"]
 
 [editable path="Ticket"]

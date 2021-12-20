@@ -36,7 +36,7 @@ func deferredGoToScene(path):
 	get_tree().set_current_scene(current_scene)
 
 func reloadLevel():
-	goToScene(selected_level, false)
+	goToScene(selected_level, true)
 	
 func goToNextLevel():
 	goToScene(level_list[(level_list.find(selected_level) + 1)%level_count], true)

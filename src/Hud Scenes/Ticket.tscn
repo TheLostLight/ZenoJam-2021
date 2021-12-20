@@ -3,7 +3,7 @@
 [ext_resource path="res://TicketFont.tres" type="Theme" id=1]
 [ext_resource path="res://Assets/Sprites/Hud/CrappyTicket.png" type="Texture" id=2]
 
-[node name="Sprite" type="Sprite"]
+[node name="Ticket" type="Sprite"]
 texture = ExtResource( 2 )
 
 [node name="Depart" type="Label" parent="."]

@@ -1,0 +1,71 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://VictoryTrigger.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Hud Scenes/MenuButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Hud Scenes/Ticket.tscn" type="PackedScene" id=3]
+[ext_resource path="res://CustomPointer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_03.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_01.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_08.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_07.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_09.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_06.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_10.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_00.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_02.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_05.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_04.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_11.png" type="Texture" id=16]
+[ext_resource path="res://Level Scenes/FishBucket.gd" type="Script" id=17]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 40.5, 72.5 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 12 ) ],
+"loop": false,
+"name": "Idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 6 ), ExtResource( 13 ), ExtResource( 5 ), ExtResource( 15 ), ExtResource( 14 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 16 ) ],
+"loop": false,
+"name": "Topple",
+"speed": 15.0
+} ]
+
+[node name="Level2" type="Node2D"]
+
+[node name="FishBucket" type="Area2D" parent="."]
+position = Vector2( 740, 620 )
+script = ExtResource( 17 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FishBucket"]
+position = Vector2( 0, 4.5 )
+shape = SubResource( 1 )
+
+[node name="BucketSprite" type="AnimatedSprite" parent="FishBucket"]
+frames = SubResource( 2 )
+animation = "Topple"
+
+[node name="VictoryTrigger" parent="." instance=ExtResource( 1 )]
+position = Vector2( 388, -99 )
+
+[node name="Ticket" parent="." instance=ExtResource( 3 )]
+position = Vector2( 178, 93 )
+
+[node name="Depart" parent="Ticket" index="0"]
+text = "Vancouver"
+
+[node name="Arrive" parent="Ticket" index="1"]
+text = "Shanghai"
+
+[node name="Gate" parent="Ticket" index="2"]
+text = "32F"
+
+[node name="MenuButton" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1273, 28 )
+
+[node name="CustomPointer" parent="." instance=ExtResource( 4 )]
+
+[editable path="Ticket"]

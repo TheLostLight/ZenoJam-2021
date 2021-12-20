@@ -26,16 +26,16 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-margin_left = 551.0
+margin_left = 417.0
 margin_top = 284.0
-margin_right = 815.0
+margin_right = 949.0
 margin_bottom = 484.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
-margin_right = 264.0
+margin_right = 532.0
 margin_bottom = 98.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -47,15 +47,30 @@ alignment = 1
 text = "Level 1: 
 Terrace Airport"
 
-[node name="ReturnButton" parent="CenterContainer/VBoxContainer" instance=ExtResource( 1 )]
+[node name="LevelTwo" parent="CenterContainer/VBoxContainer/HBoxContainer" instance=ExtResource( 1 )]
+margin_left = 268.0
+margin_right = 532.0
+
+[node name="Label" parent="CenterContainer/VBoxContainer/HBoxContainer/LevelTwo" index="0"]
+text = "Level 2:
+Vancouver"
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/VBoxContainer"]
 margin_top = 102.0
+margin_right = 532.0
 margin_bottom = 200.0
 
-[node name="Label" parent="CenterContainer/VBoxContainer/ReturnButton" index="0"]
+[node name="ReturnButton" parent="CenterContainer/VBoxContainer/CenterContainer" instance=ExtResource( 1 )]
+margin_left = 134.0
+margin_right = 398.0
+
+[node name="Label" parent="CenterContainer/VBoxContainer/CenterContainer/ReturnButton" index="0"]
 text = "Return to Menu"
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/LevelOne" to="." method="_on_LevelOne_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/ReturnButton" to="." method="_on_ReturnButton_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/LevelTwo" to="." method="_on_LevelTwo_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/CenterContainer/ReturnButton" to="." method="_on_ReturnButton_pressed"]
 
 [editable path="CenterContainer/VBoxContainer/HBoxContainer/LevelOne"]
-[editable path="CenterContainer/VBoxContainer/ReturnButton"]
+[editable path="CenterContainer/VBoxContainer/HBoxContainer/LevelTwo"]
+[editable path="CenterContainer/VBoxContainer/CenterContainer/ReturnButton"]

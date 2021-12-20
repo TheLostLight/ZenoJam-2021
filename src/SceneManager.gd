@@ -5,6 +5,7 @@ var selected_level
 
 var level_list = [
 	"res://Level1.tscn",
+	"res://Level Scenes/Level2.tscn",
 	"res://MainMenu.tscn"
 ]
 var level_count = level_list.size()

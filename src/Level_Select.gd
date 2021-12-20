@@ -10,3 +10,7 @@ func _on_LevelOne_pressed():
 
 func _on_ReturnButton_pressed():
 	SceneManager.goToScene("res://MainMenu.tscn", false)
+
+
+func _on_LevelTwo_pressed():
+	SceneManager.goToScene("res://Level Scenes/Level2.tscn", true)

@@ -1,6 +1,6 @@
 extends Area2D
 
-enum {UPRIGHT, TOPPLED, FISHTAKEN}
+enum {UPRIGHT, TOPPLING, TOPPLED, FISHTAKEN}
 
 var box_x
 var box_width
@@ -25,10 +25,20 @@ func _ready():
 #	pass
 
 func _input(event):
-	if event is InputEventMouseButton: 
-		if state == UPRIGHT:
-			if event.position.x >= box_x and event.position.x <= box_width:
-				if event.position.y >= box_y and event.position.y <= box_height: 
-					state = TOPPLED
+	if event is InputEventMouseButton:
+		if event.position.x >= box_x and event.position.x <= box_width:
+			if event.position.y >= box_y and event.position.y <= box_height: 
+				if state == UPRIGHT:
+					state = TOPPLING
 					bucket_sprite.play("Topple")
+				elif state == TOPPLED:
+					state = FISHTAKEN
+					bucket_sprite.play("Empty")
+					get_node("../CustomPointer").play("Fish")
+			
 					
+
+
+func _on_BucketSprite_animation_finished():
+	if state == TOPPLING:
+		state = TOPPLED

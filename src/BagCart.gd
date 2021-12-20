@@ -35,7 +35,7 @@ func _input(event):
 				state = cart_fall
 
 
-func _on_CartTrigger_area_entered(area):
+func _on_CartTrigger_area_entered(_area):
 	state = cart_move
 
 

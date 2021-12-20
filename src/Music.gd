@@ -7,6 +7,6 @@ onready var smooth = $Tween
 func _ready():
 	set_volume_db(-80.0)
 	
-	smooth.interpolate_property(self, "volume_db", -80.0, 0.0, 1, Tween.TRANS_LINEAR, Tween.EASE_IN, 0)
+	smooth.interpolate_property(self, "volume_db", -80.0, -20.0, 1, Tween.TRANS_LINEAR, Tween.EASE_IN, 0)
 	smooth.start()
 	play()

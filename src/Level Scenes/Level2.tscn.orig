@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=2]
+[gd_scene load_steps=90 format=2]
 
 [ext_resource path="res://VictoryTrigger.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Hud Scenes/MenuButton.tscn" type="PackedScene" id=2]
@@ -83,58 +83,6 @@
 [ext_resource path="res://Assets/Sprites/PolarBear_Idle/0055.png" type="Texture" id=81]
 [ext_resource path="res://Assets/Sprites/PolarBear_Idle/0051.png" type="Texture" id=82]
 [ext_resource path="res://Level Scenes/Lvl2Path.gd" type="Script" id=83]
-<<<<<<< HEAD
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0031.png" type="Texture" id=84]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0039.png" type="Texture" id=85]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0021.png" type="Texture" id=86]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0027.png" type="Texture" id=87]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0037.png" type="Texture" id=88]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0034.png" type="Texture" id=89]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0040.png" type="Texture" id=90]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0041.png" type="Texture" id=91]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0042.png" type="Texture" id=92]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0044.png" type="Texture" id=93]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0026.png" type="Texture" id=94]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0046.png" type="Texture" id=95]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0020.png" type="Texture" id=96]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0029.png" type="Texture" id=97]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0022.png" type="Texture" id=98]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0024.png" type="Texture" id=99]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0025.png" type="Texture" id=100]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0033.png" type="Texture" id=101]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0032.png" type="Texture" id=102]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0030.png" type="Texture" id=103]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0017.png" type="Texture" id=104]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0036.png" type="Texture" id=105]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0045.png" type="Texture" id=106]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0028.png" type="Texture" id=107]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0018.png" type="Texture" id=108]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0035.png" type="Texture" id=109]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0038.png" type="Texture" id=110]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0043.png" type="Texture" id=111]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0047.png" type="Texture" id=112]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0019.png" type="Texture" id=113]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0023.png" type="Texture" id=114]
-[ext_resource path="res://Level Scenes/Bear.gd" type="Script" id=115]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0001.png" type="Texture" id=116]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0006.png" type="Texture" id=117]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0008.png" type="Texture" id=118]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0009.png" type="Texture" id=119]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0010.png" type="Texture" id=120]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0005.png" type="Texture" id=121]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0002.png" type="Texture" id=122]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0003.png" type="Texture" id=123]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0004.png" type="Texture" id=124]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0007.png" type="Texture" id=125]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0013.png" type="Texture" id=126]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0014.png" type="Texture" id=127]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0012.png" type="Texture" id=128]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0016.png" type="Texture" id=129]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0015.png" type="Texture" id=130]
-[ext_resource path="res://Assets/Sprites/PolarBear_Walk/0011.png" type="Texture" id=131]
-=======
-[ext_resource path="res://Assets/Sprites/Fish_and_Bucket/FishBucket_12.png" type="Texture" id=84]
->>>>>>> 579f8d33b83ad76449ba8a6de3bc521399ae88d3
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 40.5, 72.5 )
@@ -150,11 +98,6 @@ animations = [ {
 "loop": false,
 "name": "Topple",
 "speed": 15.0
-}, {
-"frames": [ ExtResource( 84 ) ],
-"loop": true,
-"name": "Empty",
-"speed": 5.0
 } ]
 
 [sub_resource type="Curve2D" id=3]
@@ -170,11 +113,6 @@ animations = [ {
 "frames": [ ExtResource( 41 ), ExtResource( 38 ), ExtResource( 60 ), ExtResource( 32 ), ExtResource( 39 ), ExtResource( 28 ), ExtResource( 25 ), ExtResource( 51 ), ExtResource( 62 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 49 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 40 ), ExtResource( 46 ), ExtResource( 37 ), ExtResource( 65 ), ExtResource( 69 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 50 ), ExtResource( 45 ), ExtResource( 56 ), ExtResource( 23 ), ExtResource( 47 ), ExtResource( 29 ), ExtResource( 24 ), ExtResource( 48 ), ExtResource( 64 ), ExtResource( 26 ), ExtResource( 59 ), ExtResource( 61 ), ExtResource( 27 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 30 ), ExtResource( 55 ), ExtResource( 31 ), ExtResource( 33 ), ExtResource( 66 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 73 ), ExtResource( 78 ), ExtResource( 70 ), ExtResource( 72 ), ExtResource( 82 ), ExtResource( 77 ), ExtResource( 71 ), ExtResource( 75 ), ExtResource( 81 ), ExtResource( 79 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 80 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 19 ) ],
 "loop": true,
 "name": "Idle",
-"speed": 30.0
-}, {
-"frames": [ ExtResource( 116 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 121 ), ExtResource( 117 ), ExtResource( 125 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 131 ), ExtResource( 128 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 130 ), ExtResource( 129 ), ExtResource( 104 ), ExtResource( 108 ), ExtResource( 113 ), ExtResource( 96 ), ExtResource( 86 ), ExtResource( 98 ), ExtResource( 114 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 94 ), ExtResource( 87 ), ExtResource( 107 ), ExtResource( 97 ), ExtResource( 103 ), ExtResource( 84 ), ExtResource( 102 ), ExtResource( 101 ), ExtResource( 89 ), ExtResource( 109 ), ExtResource( 105 ), ExtResource( 88 ), ExtResource( 110 ), ExtResource( 85 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 111 ), ExtResource( 93 ), ExtResource( 106 ), ExtResource( 95 ), ExtResource( 112 ) ],
-"loop": true,
-"name": "Walk",
 "speed": 30.0
 } ]
 
@@ -193,82 +131,10 @@ shape = SubResource( 1 )
 
 [node name="BucketSprite" type="AnimatedSprite" parent="FishBucket"]
 frames = SubResource( 2 )
-animation = "Idle"
+animation = "Topple"
 
 [node name="VictoryTrigger" parent="." instance=ExtResource( 1 )]
 position = Vector2( 388, -99 )
-
-<<<<<<< HEAD
-[node name="Ticket" parent="." instance=ExtResource( 3 )]
-position = Vector2( 178, 93 )
-
-[node name="Depart" parent="Ticket" index="0"]
-text = "Vancouver"
-
-[node name="Arrive" parent="Ticket" index="1"]
-text = "Shanghai"
-
-[node name="Gate" parent="Ticket" index="2"]
-text = "32F"
-
-[node name="MenuButton" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1273, 28 )
-
-[node name="CustomPointer" parent="." instance=ExtResource( 4 )]
-
-=======
->>>>>>> 579f8d33b83ad76449ba8a6de3bc521399ae88d3
-[node name="Lvl2Path" type="Path2D" parent="."]
-curve = SubResource( 3 )
-script = ExtResource( 83 )
-
-[node name="Lvl2PathFollow" type="PathFollow2D" parent="Lvl2Path"]
-position = Vector2( 133, 710 )
-rotation = -0.0154779
-loop = false
-
-[node name="Player" parent="Lvl2Path/Lvl2PathFollow" instance=ExtResource( 18 )]
-rotation = -1.5708
-collision_layer = 3
-
-[node name="Bear" type="Area2D" parent="."]
-position = Vector2( 1008, 72 )
-rotation = -1.5708
-scale = Vector2( 2, 2 )
-script = ExtResource( 115 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bear"]
-position = Vector2( -8.5, -0.75 )
-shape = SubResource( 4 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Bear"]
-frames = SubResource( 5 )
-animation = "Idle"
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Tween" type="Tween" parent="Bear"]
-
-[node name="Sled" type="Area2D" parent="."]
-position = Vector2( 1428, 419 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sled"]
-position = Vector2( 2, -0.5 )
-shape = SubResource( 6 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Sprite" type="Sprite" parent="Sled"]
-scale = Vector2( 0.25, 0.25 )
-texture = ExtResource( 63 )
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Ticket" parent="." instance=ExtResource( 3 )]
 position = Vector2( 178, 93 )
@@ -287,7 +153,56 @@ position = Vector2( 1273, 28 )
 
 [node name="CustomPointer" parent="." instance=ExtResource( 4 )]
 frame = 0
+<<<<<<< HEAD
+=======
 
-[connection signal="animation_finished" from="FishBucket/BucketSprite" to="FishBucket" method="_on_BucketSprite_animation_finished"]
+[node name="Lvl2Path" type="Path2D" parent="."]
+curve = SubResource( 3 )
+script = ExtResource( 83 )
+
+[node name="Lvl2PathFollow" type="PathFollow2D" parent="Lvl2Path"]
+position = Vector2( 133, 710 )
+rotation = -1.5708
+loop = false
+
+[node name="Player" parent="Lvl2Path/Lvl2PathFollow" instance=ExtResource( 18 )]
+
+[node name="Bear" type="Area2D" parent="."]
+position = Vector2( 1008, 72 )
+rotation = -1.5708
+scale = Vector2( 2, 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bear"]
+position = Vector2( -8.5, -0.75 )
+shape = SubResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Bear"]
+frames = SubResource( 5 )
+animation = "Idle"
+frame = 54
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sled" type="Area2D" parent="."]
+position = Vector2( 1428, 419 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sled"]
+position = Vector2( 2, -0.5 )
+shape = SubResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Sled"]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 63 )
+__meta__ = {
+"_edit_lock_": true
+}
+>>>>>>> 21aa79b180df4310a32f5a23f368b0ec46ab3af6
 
 [editable path="Ticket"]
